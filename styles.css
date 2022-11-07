@@ -1,0 +1,172 @@
+#header-img {
+    width: 100px;
+    height: 100%;
+    border: 1px solid white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    z-index: 1;
+
+}
+
+p {
+    margin-top: 40px;
+}
+
+#content {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    margin: 100px auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav>ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 650px) {
+    .logo {
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width: 650px) {
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    nav li {
+        padding-bottom: 5px;
+    }
+
+    nav>ul {
+        flex-direction: column;
+    }
+
+    .logo>img {
+        margin: 0 auto;
+    }
+
+    #content {
+        margin: 170px auto;
+    }
+}
+
+#nameLogo {
+    font-size: 50px;
+}
+
+#title {
+    font-size: x-large;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#video {
+    width: 100%;
+    height: 400px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+@media (width <= 700px){
+    #video{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+    margin-bottom: -100px;
+}
+
+footer>p {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+#form_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#form_section>h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#form_section input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#form_section input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+#hero input[type='submit']:hover {
+    background-color: orange;
+    transition: background-color 1s;
+}
